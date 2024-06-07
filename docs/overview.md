@@ -1,17 +1,5 @@
 # Overview
 
-## Intro
-
-Hey everyone, welcome to the first official tutorial for AAVJ. This is Jack, AKA Anti-Alias, and in this video we’re going to be taking a look at AAVJ - a VJ mixer I created within TouchDesigner.
-
-AAVJ leverages the amazing front and back end functionality of TouchDesigner to allow for real-time content and other inputs or outputs TouchDesigner supports.
-
-The interface is intended to be user-friendly, customizable, and designed to work in tandem with other industry VJ software.
-
-Let’s take a look at the interface.
-
-## Begin
-
 ### Header
 
 At the top, we have our ```Header Bar``` which will list the version of AAVJ we are using, as well as the name of our project.
@@ -199,7 +187,9 @@ All the way to the left of these buttons is the ‘SYNC’ button to enable the 
 
 ## VRAM Cleanup Script
 
-The VRAM Cleanup Script is key in optimizing VRAM usage in your project in real-time. Essentially how the script works is that when you activate a scene in your layer grid, that scene ID is loaded into a 4-row table, effectively the layer history, or ‘layerhist’.
+The VRAM Cleanup Script is key in optimizing VRAM usage in your project in real-time. Essentially how the script works is as follows:
+
+* When you activate a scene in your layer grid, that scene ID is loaded into a 4-row table, effectively the layer history, or ‘layerhist’.
 
 ### Checks
 
@@ -216,11 +206,13 @@ It is highly recommended to keep the VRAM Script enabled for stability and VRAM 
 
 ## Optimization
 
-VRAM management is very important in compiling scenes within AAVJ/TouchDesigner. It is recommended to keep .tox networks to less than 800mb of VRAM per scene. VRAM amounts exceeding this may cause performance hangups or performance costs both cumulatively and individually.
+VRAM management is very important in compiling scenes within AAVJ / TouchDesigner. There are a few general rules to consider when working within AAVJ and TouchDesigner in General. 
 
-Lag CHOPs, Filter CHOPs, Timer CHOPS, and any other CHOPS that cook every frame will affect overall performance in your project. It is recommended to try and limit the usage of these operators whenever possible. See ‘COOKING’ to understand a bit more of how you can get the best performance out of your networks in TouchDesigner.
+* It is recommended to keep .tox networks to <strong> less than 800mb of VRAM per scene</strong>. VRAM amounts exceeding this may cause performance hangups or performance costs both cumulatively and individually.
 
-32-bit textures can also dramatically affect performance and VRAM usage in the project. Sometimes, 32-bit textures are necessary for a desired accuracy in simulations or TOP networks. However, 16-bit can often be used instead for close to the same accuracy, with less VRAM usage. Even in instances where 32-bit must be used, it is recommended to bookend those processes with operators that revert the TOP chain back to 8-bit RGBA before output.
+* <strong>Lag CHOPs</strong>, <strong>Filter CHOPs</strong>, <strong>Timer CHOPS</strong>, and any other <strong>CHOPS that cook every frame</strong> will affect overall performance in your project. It is recommended to try and limit the usage of these operators whenever possible. See ‘COOKING’ to understand a bit more of how you can get the best performance out of your networks in TouchDesigner.
+
+* <strong>32-bit textures</strong> can also dramatically affect performance and VRAM usage in the project. Sometimes, 32-bit textures are necessary for a desired accuracy in simulations or TOP networks. However, 16-bit can often be used instead for close to the same accuracy, with less VRAM usage. Even in instances where 32-bit must be used, it is recommended to bookend those processes with operators that revert the TOP chain back to <strong>8-bit RGBA</strong> before output.
 
 ## Notes
 

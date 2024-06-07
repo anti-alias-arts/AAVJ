@@ -18,20 +18,20 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
       primary: black
-      accent: red
+      accent: grey
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: black
-      accent: purple
+      accent: grey
 
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/instagram
       link: google.com
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/facebook-alt
       link: google.com
     - icon: fontawesome/brands/linkedin
       link: google.com

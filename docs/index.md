@@ -7,18 +7,3 @@ AAVJ leverages the amazing front and back end functionality of TouchDesigner to 
 The interface is intended to be user-friendly, customizable, and designed to work in tandem with other industry VJ software.
 
 Let’s take a look at the interface.
-
-
-
-## Commands
-
-* some `code` goes here
-
-### Plain Codeblock
-
-A plain code block
-
-``` py linenums="1"
-MY code function ()
-return
-```
