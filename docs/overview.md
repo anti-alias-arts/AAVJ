@@ -1,5 +1,7 @@
 # Overview
 
+## User Interface
+
 ### Header
 
 At the top, we have our ```Header Bar``` which will list the version of AAVJ we are using, as well as the name of our project.
@@ -64,6 +66,11 @@ Below our layer grid, we will see our project FPS, as well as how much VRAM or v
 
 * To the right of the stats container is the horizontal scroll bar which is used to pan across all the available content slots in your project. Users may click drag this slider, or use LINK Mode to map that to any hardware or input values.
 
+### Log
+
+At the very bottom of our interface is the ‘Log’ component. Whenever users interact with the interface, AAVJ will send confirmation or error messages to the log for user awareness of what’s going on in the project.
+
+
 ### Control Section
 
 * In the bottom section, on the left side, we have our main ```output window```. This is where the master mix of all your content and effects will be displayed. 
@@ -72,7 +79,7 @@ Below our layer grid, we will see our project FPS, as well as how much VRAM or v
 
 To the right of this is our ```Control 1 Panel``` .This houses our Parameters menu, Asset Browser, and custom component slots.
 
-### Parameters
+#### Parameters
 
 The ‘Parameters’ tab is where custom parameters for content or effects that we will build will populate when right-click focusing on any scene or effect in the composition.
 
@@ -93,9 +100,7 @@ Custom Components can be any container-based .tox network, enabling panel capabi
 
 To the right of that are our panel containers for our Effects, as well as the exposed values that are working within our LINK system - which consists of MIDI, OSC, or any CHOP inputs we want to use to control our networks or interface. More Custom component slots are also available in this panel.
 
-## Log
 
-At the very bottom of our interface is the ‘Log’ component. Whenever users interact with the interface, AAVJ will send confirmation or error messages to the log for user awareness of what’s going on in the project.
 
 ## Building Compatible Networks
 

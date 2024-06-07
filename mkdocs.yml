@@ -26,12 +26,11 @@ theme:
       primary: black
       accent: grey
 
-
 extra:
   social:
     - icon: fontawesome/brands/instagram
       link: google.com
-    - icon: fontawesome/brands/facebook-alt
+    - icon: fontawesome/brands/facebook
       link: google.com
     - icon: fontawesome/brands/linkedin
       link: google.com
@@ -53,7 +52,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-
+   
 copyright: |
   &copy; 2024 <a href="https://github.com/anti-alias-arts" target="blank" rel="noopener">Anti-alias Productions, LLC </a>
 
